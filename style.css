@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('bkg.jpg');
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.calculator{
+    background-color: rgba(236, 236, 236, 0.918);
+    border-radius: 1rem;
+    height: 80vh;
+    width: 30vw;
+    margin: 10vh auto;
+    box-shadow: 5px 5px 5px 5px rgb(14, 51, 82);
+}
+
+#history{
+    color: grey;
+    height: 10vh;
+    font-weight: 300;
+}
+
+#output{
+    height: 10vh;
+}
+#history,#output,.keys{
+    padding: 1rem;
+    text-align: right;
+}
+
+.keys{
+    border-top: 2px solid grey;
+    display: grid;
+    height: 50vh;
+    width: 30vw;
+    grid-template-columns: repeat(4,auto);
+}
+
+.operator,
+.number{
+    padding: 2rem;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.keys :nth-child(1),
+.keys :nth-child(2),
+.keys :nth-child(3)
+{color: red;
+    font-size: 30px;}
+    
+    .keys :nth-child(4){background-color: teal;
+        font-size: 32px;}
+        .keys :nth-child(8){background-color: orange;
+ font-size: 32px;}
+.keys :nth-child(12){background-color: pink;
+ font-size: 32px;}
+.keys :nth-child(16){background-color: royalblue;
+    font-size: 32px;}
+.keys :nth-child(20){background-color: tomato;
+    font-size: 32px;}
+    
+    .operator:hover,
+    .number:hover{
+        font-size: 25px;
+    }
+
+
